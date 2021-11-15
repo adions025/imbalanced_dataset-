@@ -1,8 +1,18 @@
-
 from imports import *
 
 
-def plot_cm(cm, labels):
+def plot_cm(cm: confusion_matrix, labels: list):
+    """
+    Function to plot a confusion matrix. Se necesita a
+    computed confusion matrix object. By definition a
+    confusion matrix :math:`C` is such that :math:`C_{i, j}`
+    is equal to the number of observations known to be in
+    group :math:`i` and  predicted to be in group :math:`j`.
+
+    :param cm: A computed matrix object
+    :param labels: A list of unique target values
+    """
+
     fig = plt.figure(figsize=(10, 10))
     ax = fig.add_subplot(111)
     cax = ax.matshow(cm)
@@ -24,8 +34,13 @@ def plot_cm(cm, labels):
 
 def plot_accuracy(history):
     """
-    Function para el accuracy del conjunto de train y del de test
-    :param history:
+    Function to plot el accuracy del set de train y validation
+    Is needed a `History` object. Its `History.history`
+    attribute is a record of training loss values and metrics
+    values at successive epochs, as well as validation loss
+    values and validation metrics values (if applicable).
+
+    :param history: a `History` object
     """
     plt.plot(history.history['accuracy'])
     plt.plot(history.history['val_accuracy'])
@@ -38,8 +53,13 @@ def plot_accuracy(history):
 
 def plot_loss(history):
     """
-    Function para la pérdida (loss) del conjunto de train y del de test
-    :param history:
+    Function to plot el loss del set de train y validation
+    Is needed a `History` object. Its `History.history`
+    attribute is a record of training loss values and metrics
+    values at successive epochs, as well as validation loss
+    values and validation metrics values (if applicable).
+
+    :param history: a `History` object
     """
     plt.plot(history.history['loss'])
     plt.plot(history.history['val_loss'])
