@@ -1,6 +1,8 @@
 # Deep Learning - Imbalanced Dataset 
 
-Keywords: Deep learning, Imbalanced Dataaset
+__Random under-sampling approach__
+
+Keywords: Deep learning, Imbalanced Dataset
 
 ## Dirs and files
 
