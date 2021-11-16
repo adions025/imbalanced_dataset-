@@ -19,7 +19,7 @@ def create_model(neurons: list, dim: int, classes: int) -> Model:
     :param neurons: A list of hidden layers
     :param dim: A int value of input dimension
     :param classes: A int value of output dimension
-    :return: a model A tf model
+    :return: A tf model
     """
     model = Sequential()
     model.add(Dense(neurons[0], input_dim=dim, activation='relu'))

@@ -21,7 +21,6 @@ from sklearn.preprocessing import OneHotEncoder
 from tensorflow.python.client import device_lib
 
 # Configuración warnings
-
 # ------------------------------------------------------------------------------
 import warnings
 warnings.filterwarnings('once')
