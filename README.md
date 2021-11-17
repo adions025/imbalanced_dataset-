@@ -12,7 +12,7 @@ A widely adopted technique for dealing with highly unbalanced datasets is called
 of removing samples from the majority class (under-sampling) and / or adding more examples from the minority 
 class (over-sampling).
 
-[image info](docs/resampling.png)
+![image info](docs/resampling.png)
 
 Despite the advantage of balancing classes, these techniques also have their weaknesses (there is no free lunch). 
 The simplest implementation of over-sampling is to duplicate random records from the minority class, which can 
